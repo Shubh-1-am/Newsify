@@ -9,7 +9,7 @@
         android:layout_width="@dimen/_100sdp"
         android:layout_height="@dimen/_10sdp"
         android:layout_gravity="start"
-        android:layout_margin="@dimen/_12sdp"
+        android:layout_margin="@dimen/_13sdp"
         app:cardBackgroundColor="@color/colorShimmerBG"
         app:cardCornerRadius="@dimen/_20sdp" />
 
