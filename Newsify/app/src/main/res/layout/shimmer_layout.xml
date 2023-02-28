@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_10sdp"
+        android:layout_gravity="start"
+        android:layout_margin="@dimen/_12sdp"
+        app:cardBackgroundColor="@color/colorShimmerBG"
+        app:cardCornerRadius="@dimen/_20sdp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_10sdp"
+        android:layout_gravity="start"
+        android:layout_margin="@dimen/_8sdp"
+        app:cardBackgroundColor="@color/colorShimmerBG"
+        app:cardCornerRadius="@dimen/_20sdp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_8sdp"
+        android:layout_weight="2"
+        app:cardBackgroundColor="@color/colorShimmerBG"
+        app:cardCornerRadius="@dimen/_15sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_weight="1"
+                android:elevation="@dimen/_2sdp"
+                app:cardBackgroundColor="@color/colorShimmerBG"
+                app:cardCornerRadius="@dimen/_25sdp" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    app:cardBackgroundColor="@color/colorShimmerBG"
+                    app:cardCornerRadius="@dimen/_20sdp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    app:cardBackgroundColor="@color/colorShimmerBG"
+                    app:cardCornerRadius="@dimen/_20sdp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    app:cardBackgroundColor="@color/colorShimmerBG"
+                    app:cardCornerRadius="@dimen/_20sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_weight="1"
+                android:elevation="@dimen/_2sdp"
+                app:cardBackgroundColor="@color/colorShimmerBG"
+                app:cardCornerRadius="@dimen/_25sdp" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    app:cardBackgroundColor="@color/colorShimmerBG"
+                    app:cardCornerRadius="@dimen/_20sdp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    app:cardBackgroundColor="@color/colorShimmerBG"
+                    app:cardCornerRadius="@dimen/_20sdp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    app:cardBackgroundColor="@color/colorShimmerBG"
+                    app:cardCornerRadius="@dimen/_20sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_weight="1"
+                android:elevation="@dimen/_2sdp"
+                app:cardBackgroundColor="@color/colorShimmerBG"
+                app:cardCornerRadius="@dimen/_25sdp" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    app:cardBackgroundColor="@color/colorShimmerBG"
+                    app:cardCornerRadius="@dimen/_20sdp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    app:cardBackgroundColor="@color/colorShimmerBG"
+                    app:cardCornerRadius="@dimen/_20sdp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    app:cardBackgroundColor="@color/colorShimmerBG"
+                    app:cardCornerRadius="@dimen/_20sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
