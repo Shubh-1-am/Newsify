@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    android:padding="@dimen/_8sdp"
+    app:cardCornerRadius="@dimen/_18sdp"
+    app:cardElevation="@dimen/_2sdp"
+    app:rippleColor="@color/colorIcon">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            app:cardCornerRadius="@dimen/_18sdp"
+            app:cardElevation="0dp"
+            app:cardPreventCornerOverlap="true">
+
+            <ImageView
+                android:id="@+id/news_image_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cropToPadding="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/news_headlines_1"
+                android:contentDescription="@string/app_name" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/news_headline_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/_60sdp"
+            android:maxLines="3"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/sample_text"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
+
+
