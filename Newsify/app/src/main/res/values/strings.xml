@@ -2,4 +2,9 @@
     <string name="app_name">Newsify</string>
     <string name="search">Search here</string>
     <string name="sample_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="news_bulletin">News Bulletin</string>
+    <string name="source">Source</string>
+    <string name="sample_time">5 hours ago</string>
 </resources>
