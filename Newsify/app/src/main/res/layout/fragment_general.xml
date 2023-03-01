@@ -1,14 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.GeneralFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/news_bulletin_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:text="@string/news_bulletin"
+            android:textSize="@dimen/_25ssp"
+            android:textStyle="bold" />
+
+           <com.jama.carouselview.CarouselView
+            android:id="@+id/carousel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:enableSnapping="true"
+            app:scaleOnScroll="false"
+            app:setAutoPlay="true"
+            app:setAutoPlayDelay="3000"
+            app:carouselOffset="center"
+            app:indicatorAnimationType="drop"
+            app:indicatorRadius="5"
+            app:indicatorPadding="5"
+            app:size="10"
+            app:spacing="10"
+            app:resource="@layout/breaking_news_item"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_general"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
