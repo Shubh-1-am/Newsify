@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="article"
+            type="com.example.newsify.retrofit.response.Article" />
+
+    </data>
 <RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/news_item_parent"
     android:layout_width="match_parent"
     android:layout_height="@dimen/_150sdp"
-    android:layout_margin="@dimen/_10sdp"
-
-    >
+    android:layout_margin="@dimen/_10sdp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/news_item_content"
@@ -31,6 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
+                urlToImage="@{article.urlToImage}"
                 android:src="@drawable/news_headlines_3" />
         </com.google.android.material.card.MaterialCardView>
         <com.google.android.material.textview.MaterialTextView
@@ -41,7 +48,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="@dimen/_5sdp"
-            android:text="@string/source"
+            android:text="@{article.source.name}"
             android:includeFontPadding="false"
             android:fontFamily="@font/oswald_semibold"
             android:textSize="@dimen/_12sdp"/>
@@ -53,7 +60,7 @@
             app:layout_constraintStart_toEndOf="@+id/news_image_card"
             app:layout_constraintTop_toBottomOf="@+id/news_source_textview"
             app:layout_constraintEnd_toEndOf="parent"
-            android:text="@string/sample_text"
+            android:text="@{article.title}"
             android:layout_margin="@dimen/_5sdp"
             android:includeFontPadding="false"
             android:textSize="@dimen/_18sdp"
@@ -69,7 +76,7 @@
             app:layout_constraintTop_toBottomOf="@+id/news_title_textview"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_margin="@dimen/_5sdp"
-            android:text="@string/sample_time"
+            timeAgoFormat="@{article.publishedAt}"
             android:includeFontPadding="false"
             android:textSize="@dimen/_10sdp"
             android:fontFamily="@font/oswald_semibold"/>
@@ -119,3 +126,4 @@
         android:layout_below="@id/news_item_content"
         android:translationY="@dimen/_5sdp"/>
 </RelativeLayout>
+</layout>

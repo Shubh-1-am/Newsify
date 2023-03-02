@@ -22,7 +22,10 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
 
     buildTypes {
         release {
@@ -108,6 +111,11 @@ dependencies {
     // For local unit tests
     testImplementation 'com.google.dagger:hilt-android-testing:2.45'
     kaptTest 'com.google.dagger:hilt-compiler:2.45'
+
+    // Paging
+        implementation "androidx.paging:paging-runtime:3.1.1"
+
+
 }
 
 kapt {
