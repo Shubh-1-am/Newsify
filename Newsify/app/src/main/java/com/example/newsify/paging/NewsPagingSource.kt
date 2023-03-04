@@ -8,13 +8,15 @@ import com.example.newsify.utils.Constants
 import retrofit2.HttpException
 
 const val STARTING_PAGE_INDEX = 1
-class NewsPagingSource (private val apiService: ApiService) : PagingSource<Int, Article> () {
+class NewsPagingSource (private val apiService: ApiService,
+                        private val category: String
+) : PagingSource<Int, Article>() {
 
 
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, Article> {
         val position = params.key ?: STARTING_PAGE_INDEX
         return try {
-            val response = apiService.getTopHeadlines("us", "business", position, params.loadSize, Constants.API_KEY)
+            val response = apiService.getTopHeadlines("in", category, position, params.loadSize, Constants.API_KEY)
             val articles = response.articles
             LoadResult.Page(
                 data = articles,
